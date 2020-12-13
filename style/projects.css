@@ -1,0 +1,159 @@
+html{
+  margin:0;
+  padding:0;
+  background-color: black;
+}
+
+
+header{
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+  
+nav {
+    position: absolute;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    
+}
+
+
+.about {
+    position: relative;
+    margin-right: 90px;
+    float: right;
+    width: 60px;
+    height: 35px;
+    top: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+   
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  margin-top: 60px
+}
+
+.grid-item {
+  background-color: (255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+img{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+p{
+  font-size: 16px;
+  font-family: Alice, Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+h1{
+  font-size: 20px;
+  font-family: Rockwell;
+}
+
+
+.projet{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin:auto;
+    gap:24px;
+    width:100%;
+    max-width: 1450px;
+}
+
+.grid-item {
+  width: 100%;
+}
+
+#headbody{
+    border-bottom: 1px solid white;
+    grid-column: 1/-1;
+    justify-content: space-between;
+    display:flex;
+    flex-wrap:nowrap;
+    margin:1em 0 1em 0;
+    max-width: 1500px;
+    margin:auto;
+  }
+  
+  
+  
+body p{
+      font-size: 16px ;
+      font-family: Alice;
+      color: white;
+     
+}
+  
+body h1{
+      font-size: 20px;
+      font-family: Rockwell;
+      color: white;
+}
+  
+  
+
+
+header .projet img:nth-child(1), .projet img:nth-child(2) {
+        grid-column: span 2;
+      }
+
+header img{
+        max-width: 100%; 
+      }
+
+
+#afrique, #asie, #asie2, #europe{
+  width:735px;
+}
+
+#vynilecoeur3 #vynilecendrier #coeurocb #coeuravectypo #cendriercoeur #endrieravectypo{
+  width:735px
+}
+
+.article p{
+  color: #ffffff
+}
+
+.flex-container{
+display:flex;
+justify-content: space-between;
+}
+
+
+a{
+  text-decoration: none;
+  color: white
+}
+
+
+@media (max-width:840px){
+  .grid-container{
+    grid-template-columns: auto;}
+  
+    body{
+      max-width: 500px;
+  } 
+}
+
+
+
+

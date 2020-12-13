@@ -1,0 +1,154 @@
+html,body{
+    margin:0;
+    padding:0;
+    background-color: white;
+  }
+  
+  header{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin-top:1em;
+    margin-bottom:1em;}
+    
+  nav {
+      position: absolute;
+      height: 50px;
+      left: 0px;
+      top: 0px;
+  }
+  
+  .name {
+      position: absolute;
+      width: 116px;
+      height: 25px;
+      left: 101px;
+      top: 16px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color:black;
+  }
+  
+  .about {
+      position: relative;
+      margin-right: 90px;
+      float: right;
+      width: 60px;
+      height: 35px;
+      top: 15px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: black;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    margin-top: 60px
+  }
+  
+  .grid-item {
+    background-color: (255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+
+  
+  p{
+    font-size: 16;
+    font-family: Alice;
+    position: center;
+  }
+  
+  h1{
+    font-size: 20;
+    font-family: Rockwell;
+  }
+  
+  
+  .projet{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin:auto;
+      gap:24px;
+      width:100%;
+      max-width: 1450px;
+  }
+  
+  #headbody{
+      border-bottom: 1px soli black;
+      grid-column: 1/-1;
+      justify-content: space-between;
+      display:flex;
+      flex-wrap:nowrap;
+      margin:1em 0 1em 0;
+      max-width: 1500px;
+      margin:auto;
+    }
+    
+    
+    
+  body p{
+        font-size: 16px ;
+        font-family: Alice;
+        color:black;
+  }
+    
+  body h1{
+        font-size: 20;
+        font-family: Rockwell;
+        color: black;
+  }
+    
+    
+    
+  
+  
+  header .projet img:nth-child(1), .projet img:nth-child(2) {
+          grid-column: span 2;
+        }
+  
+  header img{
+          max-width: 100%; 
+        }
+  
+  
+  #afrique, #asie, #asie2, #europe{
+    width:735px;
+  }
+
+
+
+  @media (min-width:960px){
+    .projet-grid .index-grid .headbody-grid{
+      font-size: 20px;
+      grid-template-columns: 100%; }
+  }
+  
+  
+  @media (min-width:800px) {
+    .projet-grid .index-grid .headbody-grid {
+        grid-column: 2/-1;
+        grid-row: 1;
+        grid-template-columns: 65% 25%;
+        gap: 30px;
+    }
+  }
+  
+  @media (min-width:800px) {
+  .img {
+    grid-column: 1;
+    margin-bottom: 30px;}
+  }
+
+  
